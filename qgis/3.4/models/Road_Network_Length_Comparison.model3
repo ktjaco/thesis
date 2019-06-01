@@ -1,0 +1,279 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="model:Road Network Length_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:Road Network Length"/>
+      <Option name="component_description" type="QString" value="Road Network Length"/>
+      <Option name="component_pos_x" type="double" value="296"/>
+      <Option name="component_pos_y" type="double" value="309"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:Road Network Length_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="region" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="region"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="roadnetwork" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="roadnetwork1"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="model:Road Network Length_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="model:Road Network Length"/>
+      <Option name="component_description" type="QString" value="Road Network Length"/>
+      <Option name="component_pos_x" type="double" value="634"/>
+      <Option name="component_pos_y" type="double" value="308"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="model:Road Network Length_2"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="region" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="region"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="roadnetwork" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="roadnetwork2"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:joinattributestable_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:joinattributestable"/>
+      <Option name="component_description" type="QString" value="Join attributes by field value"/>
+      <Option name="component_pos_x" type="double" value="561.8455598455597"/>
+      <Option name="component_pos_y" type="double" value="464.6486486486487"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:joinattributestable_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="DISCARD_NONMATCHING" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="regionid"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="FIELDS_TO_COPY" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_2" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="regionid"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="model:Road Network Length_1"/>
+            <Option name="output_name" type="QString" value="qgis:sumlinelengths_1:Output Sum Road Network Length"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_2" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="model:Road Network Length_2"/>
+            <Option name="output_name" type="QString" value="qgis:sumlinelengths_1:Output Sum Road Network Length"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="METHOD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="PREFIX" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:fieldcalculator_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:fieldcalculator"/>
+      <Option name="component_description" type="QString" value="Field calculator"/>
+      <Option name="component_pos_x" type="double" value="448.054054054054"/>
+      <Option name="component_pos_y" type="double" value="572.5135135135134"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:fieldcalculator_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="Output Road Network Comparison" type="Map">
+          <Option name="child_id" type="QString" value="qgis:fieldcalculator_1"/>
+          <Option name="component_description" type="QString" value="Output Road Network Comparison"/>
+          <Option name="component_pos_x" type="double" value="648.054054054054"/>
+          <Option name="component_pos_y" type="double" value="617.5135135135134"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="Output Road Network Comparison"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="10"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="lenDIFF"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="3"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="&quot;length&quot; - &quot;length_2&quot;"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:joinattributestable_1"/>
+            <Option name="output_name" type="QString" value="NON_MATCHING"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="NEW_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" type="QString" value=""/>
+  <Option name="model_name" type="QString" value="Road Network Length Comparison"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="qgis:fieldcalculator_1:Output Road Network Comparison" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Output Road Network Comparison"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="qgis:fieldcalculator_1:Output Road Network Comparison"/>
+      <Option name="parameter_type" type="QString" value="sink"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+    </Option>
+    <Option name="region" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="2"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Region"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="region"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="regionid" type="Map">
+      <Option name="allow_multiple" type="bool" value="false"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="QString" value="id"/>
+      <Option name="description" type="QString" value="Region ID"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="regionid"/>
+      <Option name="parameter_type" type="QString" value="field"/>
+      <Option name="parent_layer" type="QString" value="region"/>
+    </Option>
+    <Option name="roadnetwork1" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="1"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Road Network 1"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="roadnetwork1"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="roadnetwork2" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="1"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Road Network 2"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="roadnetwork2"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="region" type="Map">
+      <Option name="component_description" type="QString" value="region"/>
+      <Option name="component_pos_x" type="double" value="437"/>
+      <Option name="component_pos_y" type="double" value="172"/>
+      <Option name="name" type="QString" value="region"/>
+    </Option>
+    <Option name="regionid" type="Map">
+      <Option name="component_description" type="QString" value="regionid"/>
+      <Option name="component_pos_x" type="double" value="281.2970579027813"/>
+      <Option name="component_pos_y" type="double" value="436.25265328921927"/>
+      <Option name="name" type="QString" value="regionid"/>
+    </Option>
+    <Option name="roadnetwork1" type="Map">
+      <Option name="component_description" type="QString" value="roadnetwork1"/>
+      <Option name="component_pos_x" type="double" value="192"/>
+      <Option name="component_pos_y" type="double" value="171"/>
+      <Option name="name" type="QString" value="roadnetwork1"/>
+    </Option>
+    <Option name="roadnetwork2" type="Map">
+      <Option name="component_description" type="QString" value="roadnetwork2"/>
+      <Option name="component_pos_x" type="double" value="671"/>
+      <Option name="component_pos_y" type="double" value="171"/>
+      <Option name="name" type="QString" value="roadnetwork2"/>
+    </Option>
+  </Option>
+</Option>
