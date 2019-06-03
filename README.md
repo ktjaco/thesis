@@ -27,12 +27,7 @@ In this folder you will find a series of Python Jupyter notebooks that relate to
 ## Acknowledgements
 * Oslandia
 * Anita Graser, Austrian Institute of Technology
-<<<<<<< HEAD
 * Carleton University, Department of Geography and Environmental Studies
-
-=======
-* Carleton University - Department of Geography and Environmental Studies
->>>>>>> d5332afc881b11762c4ffce938e041d933b2b912
 
 ## Requirements
 
