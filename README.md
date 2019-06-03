@@ -29,7 +29,7 @@ In this folder you will find a series of Python Jupyter notebooks that relate to
 ## Acknowledgements
 * Oslandia
 * Anita Graser, Austrian Institute of Technology
-*
+* Carleton University, Department of Geography and Environmental Studies
 
 
 ## Requirements
